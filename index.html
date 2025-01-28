@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Add Task Section -->
+        <div class="form-box add-task">
+            <form>
+                <h1>Add Task</h1>
+                <div class="input-box">
+                    <input type="text" id="task-input" placeholder="Enter Task" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- View Tasks Section -->
+        <div class="form-box view-tasks">
+            <form>
+                <h1>Task List</h1>
+                <div class="task-list">
+                    <ul id="task-list">
+                        <!-- Task items will be added here dynamically -->
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <!-- Toggle Panels -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>View Your Tasks</h1>
+                <p>Want to see all tasks?</p>
+                <button class="btn view-btn">View</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Add New Task</h1>
+                <p>Want to add a new task?</p>
+                <button class="btn add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+
+</html>
